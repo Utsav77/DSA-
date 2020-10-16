@@ -1,0 +1,14 @@
+#code
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    maxi_now=0
+    maxi_final=max(a)
+    for i in a:
+        maxi_now+=i
+        if(maxi_now < 0):
+            maxi_now=0
+        elif(maxi_now>maxi_final):
+            maxi_final=maxi_now
+    print(maxi_final)
