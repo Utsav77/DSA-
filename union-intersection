@@ -1,0 +1,18 @@
+#code
+t=int(input())
+for _ in range(t):
+    n,m=map(int,input().split())
+    a=list(map(int,input().split()))
+    b=list(map(int,input().split()))
+    c=set(a)
+    #union
+    for i in b:
+        a.append(i)
+    print(list(set(a)))
+    #interection
+    
+    res=[]
+    for i in b:
+        if(i in c):
+            res.append(i)
+    print(res)
