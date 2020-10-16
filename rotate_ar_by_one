@@ -1,0 +1,10 @@
+#code
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    x=a.pop()
+    a.insert(0,x)
+    for i in a:
+        print(i,end=' ')
+    print()
