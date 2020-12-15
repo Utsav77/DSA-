@@ -1,0 +1,10 @@
+a=list(map(int,input().split()))
+n=len(a)
+mini=99999999
+maxi=0
+for i in range(n):
+    if(a[i]<mini):
+        mini=a[i]
+    elif(a[i]-mini>maxi):
+        maxi=a[i]-mini
+print(maxi)
